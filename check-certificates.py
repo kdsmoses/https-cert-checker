@@ -1,3 +1,25 @@
+# Installation
+
+# Clone and cd to git repo:
+#	git clone https://github.com/kdsmoses/https-cert-checker.git
+#	cd https-cert-checker.git
+
+# If no Python installed (Windows 11 / Server 2025 or newer):
+#	winget install --source msstore --id 9NQ7512CXL7T
+#	py list --online	# to list available versions
+#	py install 3.14		# (or latest version)
+
+# Set up Python virtual environment & install dependencies:
+#	cd <script directory>
+#	python -m venv .venv
+#	pip install dotenv cloudflare slack-sdk
+
+# Usage:
+#	copy example.env .env
+#	# configure variables in .env file
+#	.\check-certs.bat
+
+
 import os
 import sys
 import multiprocessing
